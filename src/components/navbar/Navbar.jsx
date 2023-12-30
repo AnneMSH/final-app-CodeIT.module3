@@ -1,19 +1,23 @@
 import React from 'react'
 import styles from './navbar.module.css'
+import Link from 'next/link'
 
 function Navbar() {
   const links =[
     {
       id: 1,
-      title: "Home"
+      title: "Home",
+      url:'/'
     },
     {
       id: 2,
-      title: "About"
+      title: "About",
+      url:'/about'
     },
     {
       id: 3,
-      title: "Contact"
+      title: "Contact",
+      url:'/contact'
     },
   ]
   return (
@@ -21,7 +25,7 @@ function Navbar() {
     <div className={styles.webname}>LOGO</div>
     <div className={styles.links}>
       {links.map((links) => (
-        <div>{links.title}</div>
+        <Link href={links.url} className={styles.linkss}>{links.title}</Link>
       ))}
     </div>
   </div>

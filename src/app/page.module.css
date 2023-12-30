@@ -6,3 +6,39 @@
 .mySpan {
   color: rgb(187,187,187);
 }
+
+.div1 {
+  padding: 5px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10%
+}
+
+.imtired {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.images{
+  display: flex;
+  justify-content: center;
+}
+
+.photo1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+.photo12 {
+  position: absolute;
+}
+
+.title{
+  font-size: 72px;
+  background: linear-gradient(to bottom, rgb(174, 117, 148), rgba(57, 78, 66, 0.372));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

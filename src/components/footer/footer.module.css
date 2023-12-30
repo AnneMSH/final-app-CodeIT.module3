@@ -1,9 +1,15 @@
-.footer {
-    background-color: rgb(32, 20, 26);
-    color: white;
-    height: 50px;
+.container {
+    background-color: rgba(179, 223, 195, 0.703);
+    color: black;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     font-family: cursive;
+    padding: 2%;
+}
+
+.socialNetworks{
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
