@@ -23,11 +23,12 @@ export default function Home() {
         </div>
         <div className={styles.imtired}>
           <h1 className={styles.title}>Beauty Secrets</h1>
-          <p>
+          <p className={styles.pp}>
             Habitant morbi tristique senectus et. Nec dui nunc mattis enim ut
             tellus. Semper auctor neque vitae tempus quam pellentesque nec nam
             aliquam.
           </p>
+          <button className={styles.bt}>Read More</button>
         </div>
       </div>
     </main>

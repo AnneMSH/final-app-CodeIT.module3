@@ -19,17 +19,24 @@ function Navbar() {
       title: "Contact",
       url:'/contact'
     },
+    {
+      id:4,
+      title: "Dashboard",
+      url:'/dashboard'
+    }
   ]
   return (
-  <div className={styles.container}>    
-    <div className={styles.webname}>LOGO</div>
-    <div className={styles.links}>
-      {links.map((links) => (
-        <Link href={links.url} className={styles.linkss}>{links.title}</Link>
-      ))}
+    <div className={styles.container}>
+      <div className={styles.webname}>LOGO</div>
+      <div className={styles.links}>
+        {links.map((links) => (
+          <Link href={links.url} className={styles.linkss}>
+            {links.title}
+          </Link>
+        ))}
+      </div>
     </div>
-  </div>
-  )
+  );
 }
 
 export default Navbar

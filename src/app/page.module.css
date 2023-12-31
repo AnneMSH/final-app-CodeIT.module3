@@ -19,6 +19,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .images{
@@ -38,7 +39,44 @@
 
 .title{
   font-size: 72px;
-  background: linear-gradient(to bottom, rgb(174, 117, 148), rgba(57, 78, 66, 0.372));
+  background: linear-gradient(to bottom, rgb(241,130,139), rgb(174, 117, 148));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+
+.bt {
+  border-color: transparent;
+  margin-top: 50px;
+  width: 170px;
+  border-radius: 15px;
+  height: 40px;
+  background-color: rgb(241,130,139);
+  color: white;
+  font-size: 16px;
+}
+
+.bt:hover {
+  border-color: rgba(179, 223, 195);
+  background-color: white;
+  color: rgb(241,130,139);
+  transition: .2s;
+}
+
+
+
+/* responsive */
+
+
+@media screen and (max-width: 800px) {
+   .div1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+
+   .bt {
+    margin-top: 30px;
+    margin-bottom: 30px;
+   }
 }
